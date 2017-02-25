@@ -27,7 +27,7 @@ public class TicketDao {
 	         con = DriverManager.getConnection(connectionUrl);  
 
 	         // Create and execute an SQL statement that returns some data.  
-	         String SQL = "SELECT TOP 10 * FROM Person.Contact";  
+	         String SQL = "SELECT * FROM IT_Tickets";  
 	         stmt = con.createStatement();  
 	         rs = stmt.executeQuery(SQL);  
 
