@@ -1,0 +1,38 @@
+div.center {
+ width : 60%;
+ padding-left : 20px;
+ margin-top : 30px;
+ margin-left : auto;
+ margin-right : auto;
+}
+
+table{
+
+margin-top:10px;
+
+}
+
+fieldset{
+	
+	padding-top:10px;
+	
+}
+
+label{
+	
+	vertical-align:top;
+	width:150px;
+	text-align:right;
+	display:inline-block;
+	
+}
+
+form input[type=submit] {
+	
+	margin-left : 200px;
+	margin-top : 10px;
+}
+input{
+	
+	margin-bottom:10px;
+}
