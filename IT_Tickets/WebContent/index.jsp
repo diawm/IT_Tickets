@@ -11,7 +11,11 @@
 
 <div class="center"> 
 
+<<<<<<< HEAD
 <a href="addTicket">
+=======
+<a href="nouveau">
+>>>>>>> branch 'master' of https://github.com/diawm/IT_Tickets
 <img src="images/add-16.png"/>
 </a>
 
