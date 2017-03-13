@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Incidents</title>
+<title>Tickets</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,11 +11,7 @@
 
 <div class="center"> 
 
-<<<<<<< HEAD
 <a href="addTicket">
-=======
-<a href="nouveau">
->>>>>>> branch 'master' of https://github.com/diawm/IT_Tickets
 <img src="images/add-16.png"/>
 </a>
 
