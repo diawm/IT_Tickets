@@ -21,6 +21,13 @@
    <th>ID</th>
    <th>Panne</th>
    <th>Commentaire</th>
+   <th>HEURE_SIGNALISATION </th>
+   <th>TRAITEMENT </th>
+   <th>HEURE_FERMETURE</th>
+   <th>ID_IT_STAFF</th>
+   <th>ID_ADD_IT_STAFF</th>
+   <th>STATUS</th>
+   
    </tr>
  </thead>
 <tbody>
@@ -28,6 +35,12 @@
 <tr><td>${id}</td>
 <td>${panne}</td>
 <td>${commentaire}</td>
+<td>${HEURE_SIGNALISATION }</td>
+<td>${TRAITEMENT } </td>
+<td>${ HEURE_FERMETURE}</td>
+<td>${ID_IT_STAFF }</td>
+<td>${ID_ADD_IT_STAFF}</td>
+<td>${STATUS}</td>
 </tr>
 </s:iterator>
 </tbody>
