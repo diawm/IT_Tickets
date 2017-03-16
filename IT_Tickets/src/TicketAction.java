@@ -12,9 +12,6 @@ public class TicketAction extends ActionSupport {
 	}
 	public String saveTicket()
 	{
-		System.out.println("sauvegarde dans la base de donnees");
-		System.out.println("panne "+ticket.getPanne());
-		System.out.println("commentaire "+ticket.getCommentaire());
 		TicketDao ticketDao = new TicketDao();
 		ticketDao.saveTicket(ticket);
 		return SUCCESS;
@@ -27,6 +24,5 @@ public class TicketAction extends ActionSupport {
 	public void setTicket(Ticket ticket) {
 		this.ticket = ticket;
 	}
-	
 	
 }

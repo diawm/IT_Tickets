@@ -21,9 +21,9 @@
    <th>ID</th>
    <th>Panne</th>
    <th>Commentaire</th>
-   <th>HEURE_SIGNALISATION </th>
+   <th>DATE_SIGNALISATION </th>
    <th>TRAITEMENT </th>
-   <th>HEURE_FERMETURE</th>
+   <th>DATE_FERMETURE</th>
    <th>ID_IT_STAFF</th>
    <th>ID_ADD_IT_STAFF</th>
    <th>STATUS</th>
