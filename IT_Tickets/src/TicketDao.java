@@ -25,7 +25,7 @@ public class TicketDao {
 	         // Establish the connection.  
 	         Class.forName("com.mysql.cj.jdbc.Driver");  
 	         con = DriverManager.getConnection(connectionUrl,"root","passer");  
-
+	         // Create and execute an SQL statement that returns the tickets.  
 	         // Create and execute an SQL statement that returns some data.  
 	         String SQL = "SELECT ID_Ticket, PANNE, COMMENTAIRE FROM IT_Tickets";  
 	         stmt = con.createStatement();  
@@ -66,7 +66,7 @@ public class TicketDao {
 	         // Establish the connection.  
 	         Class.forName("com.mysql.cj.jdbc.Driver");  
 	         con = DriverManager.getConnection(connectionUrl,"root","passer");  
-
+	         // Create and execute a prepared SQL statement to insert the values.  
 	         // Create and execute an SQL statement that returns some data.  
 	         String SQL = "insert into IT_Tickets(ID_STAFF,PANNE,COMMENTAIRE) values(?,?,?);";  
 	         stmt = con.prepareStatement(SQL);

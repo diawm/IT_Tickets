@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Incidents</title>
+<title>Tickets</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
 
 <div class="center"> 
 
-<a href="nouveau">
+<a href="addTicket">
 <img src="images/add-16.png"/>
 </a>
 

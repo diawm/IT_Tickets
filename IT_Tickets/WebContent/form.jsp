@@ -10,7 +10,7 @@
 <body>
 <div class="center"> 
 
-<form action="save">
+<form action="saveTicket">
 
 <fieldset>
 

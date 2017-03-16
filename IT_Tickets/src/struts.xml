@@ -6,10 +6,10 @@ Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
         <action name="" class="TicketAction">
             <result>index.jsp</result>
         </action>
-        <action name="nouveau">
-            <result>formulaire.jsp</result>
+        <action name="addTicket">
+            <result>form.jsp</result>
         </action>
-        <action name="save" class="TicketAction" method="save">
+        <action name="saveTicket" class="TicketAction" method="saveTicket">
             <result type="redirect">/</result>
         </action>
     </package>

@@ -1,4 +1,3 @@
-
 public class Ticket {
 
 	private String id;
@@ -22,8 +21,6 @@ public class Ticket {
 	}
 	public void setPanne(String panne) {
 		this.panne = panne;
-	}
-	
-	
+	}	
 	
 }
