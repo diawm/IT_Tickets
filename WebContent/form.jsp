@@ -21,6 +21,11 @@
 <label>Commentaire</label>
 <textarea cols="25" rows="7" name="ticket.commentaire"> </textarea>
 <br>
+
+<label>Traitement</label>
+<textarea cols="25" rows="7" name="ticket.traitement"> </textarea>
+<br>
+
 <input type="submit" value="envoyer"/>
 
 </fieldset>

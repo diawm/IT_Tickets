@@ -1,4 +1,7 @@
 import java.util.List;
+
+import org.apache.struts2.ServletActionContext;
+
 import com.opensymphony.xwork2.ActionSupport;
 
 @SuppressWarnings("serial")
@@ -14,6 +17,14 @@ public class TicketAction extends ActionSupport {
 	{
 		TicketDao ticketDao = new TicketDao();
 		ticketDao.saveTicket(ticket);
+		return SUCCESS;
+	}
+	
+	public String closeTicket()
+	{
+		TicketDao ticketDao = new TicketDao();
+		String value = ServletActionContext.getRequest().getParameter("id");
+		ticketDao.closeTicket(new Long(value));
 		return SUCCESS;
 	}
 

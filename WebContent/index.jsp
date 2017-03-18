@@ -23,10 +23,8 @@
    <th>Commentaire</th>
    <th>DATE_SIGNALISATION </th>
    <th>TRAITEMENT </th>
-   <th>DATE_FERMETURE</th>
-   <th>ID_IT_STAFF</th>
-   <th>ID_ADD_IT_STAFF</th>
-   <th>STATUS</th>
+   <th>Status</th>
+   <th>Action</th>
    
    </tr>
  </thead>
@@ -35,12 +33,10 @@
 <tr><td>${id}</td>
 <td>${panne}</td>
 <td>${commentaire}</td>
-<td>${HEURE_SIGNALISATION }</td>
-<td>${TRAITEMENT } </td>
-<td>${ HEURE_FERMETURE}</td>
-<td>${ID_IT_STAFF }</td>
-<td>${ID_ADD_IT_STAFF}</td>
-<td>${STATUS}</td>
+<td><s:date name="date_signalisation" format="dd/MM/yyyy hh:mm:ss" /></td>
+<td>${traitement} </td>
+<td>${date_fermeture==null ? "en cours" : "ferme"}</td>
+<td><a href="closeTicket?id=${id}" onclick="return confirm('etes vous sur de vouloir fermer ce ticket?')" style="display:${date_fermeture==null ? 'block' : 'none'}">Close</a></td>
 </tr>
 </s:iterator>
 </tbody>
