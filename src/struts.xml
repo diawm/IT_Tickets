@@ -9,6 +9,12 @@ Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
         <action name="addTicket">
             <result>form.jsp</result>
         </action>
+      <action name="opened" class="TicketAction" method="showOpenedTickets" >
+            <result>opened.jsp</result>  
+        </action> 
+        <action name="closed" class="TicketAction" method="showClosedTickets" >
+            <result>closed.jsp</result>  
+        </action> 
         <action name="saveTicket" class="TicketAction" method="saveTicket">
             <result type="redirect">/</result>
         </action>

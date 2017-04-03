@@ -8,11 +8,34 @@ import com.opensymphony.xwork2.ActionSupport;
 public class TicketAction extends ActionSupport {
 	
 	private Ticket ticket;
+	private List<Ticket> tickets;
 	
-	public List<Ticket> getTickets() {
+	public String execute() {
 		TicketDao ticketDao = new TicketDao();
-		return ticketDao.getTickets();
+		tickets = ticketDao.getTickets();
+		return SUCCESS;
 	}
+	
+	public String showOpenedTickets() {
+		TicketDao ticketDao = new TicketDao();
+		tickets = ticketDao.getOpenedTickets();
+		return SUCCESS;
+	}
+	
+	public String showClosedTickets() {
+		TicketDao ticketDao = new TicketDao();
+		tickets = ticketDao.getClosedTickets();
+		return SUCCESS;
+	}
+
+
+	public String showModifyTickets() {
+		TicketDao ticketDao = new TicketDao();
+		tickets = ticketDao.getModifyTickets();
+		return SUCCESS;
+	}
+	
+	
 	public String saveTicket()
 	{
 		TicketDao ticketDao = new TicketDao();
@@ -20,11 +43,12 @@ public class TicketAction extends ActionSupport {
 		return SUCCESS;
 	}
 	
+		
 	public String closeTicket()
 	{
 		TicketDao ticketDao = new TicketDao();
 		String value = ServletActionContext.getRequest().getParameter("id");
-		ticketDao.closeTicket(new Long(value));
+		ticketDao.closeTicket(value);
 		return SUCCESS;
 	}
 
@@ -35,5 +59,17 @@ public class TicketAction extends ActionSupport {
 	public void setTicket(Ticket ticket) {
 		this.ticket = ticket;
 	}
+
+
+	public void setTickets(List<Ticket> tickets) {
+		this.tickets = tickets;
+	}
+	
+
+
+	public List<Ticket> getTickets() {
+		return tickets;
+	}
+	
 	
 }

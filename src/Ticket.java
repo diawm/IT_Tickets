@@ -2,7 +2,8 @@ import java.util.Date;
 
 public class Ticket {
 
-	private Long id;
+	private String id;
+	/* private Long id_staff; */
 	private String panne;
 	private String commentaire; 
 	private Date date_signalisation;
@@ -12,13 +13,19 @@ public class Ticket {
 	private Long id_add_it_staff;
 	private boolean status;
 	
-	public Long getId() {
+	
+	public String getId() {
 		return id;
 	}
-	public void setId(Long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
-	
+	/* public Long getId_staff() {
+		return id_staff;
+	}
+	public void setId_staff(Long id_staff) {
+		this.id_staff = id_staff;
+	} */
 	public String getPanne() {
 		return panne;
 	}
